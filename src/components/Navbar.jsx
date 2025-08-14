@@ -38,7 +38,7 @@ const Navbar = () => {
             <hr className='border-none outline-none h-0.5 bg-primary w-3/5 mar-auto hidden'/>
         </NavLink>
         <button 
-        onClick={() => window.open("https://medi-flow-admin-lpz4.vercel.app/", "_blank")}
+        onClick={() => window.open("https://mediflow-admin-zau5.vercel.app/", "_blank")}
         className='py-1 px-2 text-sm border rounded-full border-primary text-gray-600 shadow-md hover:bg-primary hover:text-white'>
             Admin panel
         </button>
