@@ -15,7 +15,7 @@ const AppContextProvider = (props) => {
 
   const navigate = useNavigate();
 
-  const API_URL = "http://localhost:5000";
+  const API_URL = "https://mediflow-backend-1.onrender.com/";
 
   const fetchDoctors = async () => {
     try {
@@ -106,7 +106,7 @@ const AppContextProvider = (props) => {
       appstatus: "pending",
     };
 
-    await axios.post("http://localhost:5000/appointments", newAppointment);
+    await axios.post("https://mediflow-backend-1.onrender.com/appointments", newAppointment);
     await fetchAppointments();
     toast.success("Appointment booked successfully!");
     navigate('/my-appointments');

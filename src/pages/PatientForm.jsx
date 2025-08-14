@@ -31,7 +31,7 @@ export default function BookAppointment() {
       allergies: formData.allergies || "N/A",
     };
 
-    await axios.post("http://localhost:5000/appointments", appointmentData);
+    await axios.post("https://mediflow-backend-1.onrender.com/appointments", appointmentData);
     alert("Appointment booked successfully!");
   };
 

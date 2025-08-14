@@ -14,7 +14,7 @@ const MyAppointments = () => {
 
   const handlePayment = async (appointmentId, method) => {
     try {
-      await axios.patch(`http://localhost:5000/appointments/${appointmentId}`, {
+      await axios.patch(`https://mediflow-backend-1.onrender.com/appointments/${appointmentId}`, {
         status: "Paid",
         paymentMethod: method,
       });

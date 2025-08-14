@@ -9,7 +9,7 @@ const ReviewForm = ({ appointment, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/reviews", {
+      await axios.post("https://mediflow-backend-1.onrender.com/reviews", {
         appointmentId: appointment.id,
         doctorName: appointment.doctorName,
         patientName: appointment.patientName,

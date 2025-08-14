@@ -21,19 +21,19 @@ const Login = () => {
     try {
       if(state === 'Sign Up'){
 
-        const check = await axios.get(`http://localhost:5000/patients?email=${email}`);
+        const check = await axios.get(`https://mediflow-backend-1.onrender.com/patients?email=${email}`);
       if (check.data.length > 0) {
         toast.error("Email already registered!");
         return;
       }
 
-      await axios.post("http://localhost:5000/patients", { name, email, password });
+      await axios.post("https://mediflow-backend-1.onrender.com/patients", { name, email, password });
       toast.success("Account created successfully!");
       setState("Login");
 
       } else {
 
-        const res = await axios.get(`http://localhost:5000/patients?email=${email}&password=${password}`);
+        const res = await axios.get(`https://mediflow-backend-1.onrender.com/patients?email=${email}&password=${password}`);
         if (res.data.length > 0) {
           localStorage.setItem("token", res.data[0].id);
           setToken(res.data[0].id);
