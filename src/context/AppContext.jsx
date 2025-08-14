@@ -15,7 +15,7 @@ const AppContextProvider = (props) => {
 
   const navigate = useNavigate();
 
-  const API_URL = "https://mediflow-backend-1.onrender.com/";
+  const API_URL = "https://mediflow-backend-1.onrender.com";
 
   const fetchDoctors = async () => {
     try {
