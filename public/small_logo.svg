@@ -1,0 +1,6 @@
+<!-- public/mediflow-logo-icon.svg -->
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="50" height="50" rx="12" fill="#5c6ef8"/>
+  <rect x="20" y="10" width="10" height="30" rx="2" fill="white"/>
+  <rect x="10" y="20" width="30" height="10" rx="2" fill="white"/>
+</svg>

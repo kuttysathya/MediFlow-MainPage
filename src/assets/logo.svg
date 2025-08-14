@@ -1,0 +1,15 @@
+<svg width="250" height="60" viewBox="0 0 250 60" xmlns="http://www.w3.org/2000/svg">
+    <!-- Blue Rounded Background for Cross -->
+    <rect x="0" y="5" width="50" height="50" rx="15" fill="#5c6ef8" />
+    
+    <!-- White vertical bar -->
+    <rect x="20" y="15" width="10" height="30" rx="4" fill="white" />
+    
+    <!-- White horizontal bar -->
+    <rect x="10" y="25" width="30" height="10" rx="4" fill="white" />
+    
+    <!-- MediFlow Text -->
+    <text x="65" y="40" font-size="28" font-weight="700" fill="#08004d" font-family="'Segoe UI', sans-serif">
+      MediFlow
+    </text>
+  </svg>

@@ -1,0 +1,555 @@
+{
+  "prescriptions": [
+    {
+      "patientName": "sathya",
+      "diagnoses": "fewer",
+      "allergies": "na",
+      "prescriptions": [
+        {
+          "medicine": "medicine 1",
+          "dosage": "100mg",
+          "duration": "5 days",
+          "interval": "after break fast"
+        },
+        {
+          "medicine": "medicine 2",
+          "dosage": "200mg",
+          "duration": "3days",
+          "interval": "after dinner"
+        }
+      ],
+      "notes": "drink hot water.\navoid junk foods...",
+      "datetime": "2025-08-05T20:28:00.000Z",
+      "doctorId": "doc1",
+      "id": "1c3b"
+    },
+    {
+      "patientName": "sathya",
+      "diagnosis": "fewer, cold",
+      "allergies": "na",
+      "prescriptions": [
+        {
+          "medicine": "med1",
+          "dosage": "100mg",
+          "duration": "2days",
+          "interval": "after dinner"
+        },
+        {
+          "medicine": "med2",
+          "dosage": "1mg",
+          "duration": "3days",
+          "interval": "after dinner"
+        }
+      ],
+      "notes": "drive hot water and avoid fast food.",
+      "datetime": "2025-08-09T04:54:00.000Z",
+      "doctorId": "doc1",
+      "id": "da2f"
+    },
+    {
+      "patientName": "sathya",
+      "prescriptions": [
+        {
+          "medicine": "mlhikn",
+          "dosage": "hvvj",
+          "duration": "jhvijfvh",
+          "Interval": "jvhvyjgbk",
+          "interval": "kjolij"
+        }
+      ],
+      "notes": "dtfiuhbio",
+      "datetime": "2025-08-13T04:18:00.000Z",
+      "doctorId": "doc1",
+      "id": "13e3"
+    },
+    {
+      "id": "7409",
+      "patientName": "sathya",
+      "diagnoses": "",
+      "allergies": "",
+      "prescriptions": [
+        {
+          "medicine": "medicine ",
+          "dosage": "dosage",
+          "duration": "duration",
+          "Interval": "before dinner"
+        }
+      ],
+      "notes": "notes",
+      "doctorId": "doc1",
+      "datetime": "2025-08-13T14:24:01.446Z"
+    },
+    {
+      "id": "6f0f",
+      "patientName": "sathya",
+      "diagnoses": "",
+      "allergies": "na",
+      "prescriptions": [
+        {
+          "medicine": "jvukvmkkfk",
+          "dosage": "c,jvhj,",
+          "duration": "jcjkhbvjnm",
+          "interval": "bvj b,"
+        }
+      ],
+      "notes": "vmhvj,",
+      "doctorId": "doc1",
+      "datetime": "2025-08-13T14:40:36.998Z"
+    }
+  ],
+  "patients": [
+    {
+      "id": "473a",
+      "image": "blob:http://localhost:5173/cbffe884-4964-4cb1-a078-fcf2d2f3563d",
+      "name": "sathya",
+      "email": "sathyabc@gmail.com",
+      "password": "sathya123",
+      "phone": "+91 1368789450",
+      "address": "124 Main St, City, Country",
+      "age": "23",
+      "gender": "Female",
+      "bloodGroup": "O+",
+      "DOB": "2002-05-29"
+    }
+  ],
+  "admins": [
+    {
+      "id": "1",
+      "name": "Admin One",
+      "email": "admin1@example.com",
+      "password": "admin123"
+    },
+    {
+      "id": "2",
+      "name": "Admin Two",
+      "email": "admin2@example.com",
+      "password": "secure456"
+    },
+    {
+      "id": "3",
+      "name": "Admin Three",
+      "email": "admin3@example.com",
+      "password": "pass789"
+    },
+    {
+      "id": "4",
+      "name": "Admin Four",
+      "email": "admin4@example.com",
+      "password": "admin@321"
+    },
+    {
+      "id": "5",
+      "name": "Admin Five",
+      "email": "admin5@example.com",
+      "password": "mypassword"
+    },
+    {
+      "id": "6",
+      "name": "Admin Six",
+      "email": "admin6@example.com",
+      "password": "welcome123"
+    },
+    {
+      "id": "7",
+      "name": "Admin Seven",
+      "email": "admin7@example.com",
+      "password": "helloadmin"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc1",
+      "name": "Dr. Richard James",
+      "image": "https://i.ibb.co/C3v5Dp0b/doc1.png",
+      "email": "richard@gmail.com",
+      "password": "123456",
+      "speciality": "General physician",
+      "degree": "MBBS",
+      "experience": "4 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": "55",
+      "address": {
+        "line1": "17th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true,
+      "available": true
+    },
+    {
+      "availability": true,
+      "address": {
+        "line1": "27th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "id": "doc2",
+      "name": "Dr. Emily Larson",
+      "image": "https://i.ibb.co/h1wpKsN0/doc2.png",
+      "email": "emily@gmail.com",
+      "password": "789123",
+      "speciality": "Gynecologist",
+      "degree": "MBBS",
+      "experience": "3 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": "62",
+      "available": true
+    },
+    {
+      "id": "doc3",
+      "name": "Dr. Sarah Patel",
+      "image": "https://i.ibb.co/WNwYqhj2/doc3.png",
+      "email": "sarah@gmail.com",
+      "password": "123789",
+      "speciality": "Dermatologist",
+      "degree": "MBBS",
+      "experience": "1 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 30,
+      "address": {
+        "line1": "37th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": false
+    },
+    {
+      "id": "doc4",
+      "name": "Dr. Christopher Lee",
+      "image": "https://i.ibb.co/tpK0pFZN/doc4.png",
+      "email": "christop@gmail.com",
+      "password": "799923",
+      "speciality": "Pediatricians",
+      "degree": "MBBS",
+      "experience": "2 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 40,
+      "address": {
+        "line1": "47th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": false
+    },
+    {
+      "id": "doc5",
+      "name": "Dr. Jennifer Garcia",
+      "image": "https://i.ibb.co/Kp5pqwMz/doc5.png",
+      "email": "jennifer@gmail.com",
+      "password": "7883213",
+      "speciality": "Neurologist",
+      "degree": "MBBS",
+      "experience": "4 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 50,
+      "address": {
+        "line1": "57th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc6",
+      "name": "Dr. Andrew Williams",
+      "image": "https://i.ibb.co/XcDCkX4/doc6.png",
+      "email": "andrew@gmail.com",
+      "password": "357951",
+      "speciality": "Neurologist",
+      "degree": "MBBS",
+      "experience": "4 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 50,
+      "address": {
+        "line1": "57th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc7",
+      "name": "Dr. Christopher Davis",
+      "image": "https://i.ibb.co/bM70h24m/doc7.png",
+      "email": "christo@gmail.com",
+      "password": "753421",
+      "speciality": "General physician",
+      "degree": "MBBS",
+      "experience": "4 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 50,
+      "address": {
+        "line1": "17th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": false
+    },
+    {
+      "id": "doc8",
+      "name": "Dr. Timothy White",
+      "image": "https://i.ibb.co/yFvxsNwc/doc8.png",
+      "email": "timothy@gmail.com",
+      "password": "963258",
+      "speciality": "Gynecologist",
+      "degree": "MBBS",
+      "experience": "3 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 60,
+      "address": {
+        "line1": "27th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc9",
+      "name": "Dr. Ava Mitchell",
+      "image": "https://i.ibb.co/VWWvjppy/doc9.png",
+      "email": "avamit@gmail.com",
+      "password": "55552233",
+      "speciality": "Dermatologist",
+      "degree": "MBBS",
+      "experience": "1 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 30,
+      "address": {
+        "line1": "37th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc10",
+      "name": "Dr. Jeffrey King",
+      "image": "https://i.ibb.co/SXGvG6ht/doc10.png",
+      "email": "jeffrey@gmail.com",
+      "password": "154637",
+      "speciality": "Pediatricians",
+      "degree": "MBBS",
+      "experience": "2 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 40,
+      "address": {
+        "line1": "47th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc11",
+      "name": "Dr. Zoe Kelly",
+      "image": "https://i.ibb.co/mCh4sDW2/doc11.png",
+      "email": "zoe@gmail.com",
+      "password": "yy245e",
+      "speciality": "Gastroenterologist",
+      "degree": "MBBS",
+      "experience": "4 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 50,
+      "address": {
+        "line1": "57th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc12",
+      "name": "Dr. Patrick Harris",
+      "image": "https://i.ibb.co/wFMgCgXL/doc12.png",
+      "email": "harris@gmail.com",
+      "password": "pat123456",
+      "speciality": "Neurologist",
+      "degree": "MBBS",
+      "experience": "4 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 50,
+      "address": {
+        "line1": "57th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc13",
+      "name": "Dr. Chloe Evans",
+      "image": "https://i.ibb.co/PG4k8YMP/doc13.png",
+      "email": "chloe@gmail.com",
+      "password": "evans7894",
+      "speciality": "General physician",
+      "degree": "MBBS",
+      "experience": "4 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 50,
+      "address": {
+        "line1": "17th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc14",
+      "name": "Dr. Ryan Martinez",
+      "image": "https://i.ibb.co/N2yMvKDc/doc14.png",
+      "email": "ryan@gmail.com",
+      "password": "12312123",
+      "speciality": "Gynecologist",
+      "degree": "MBBS",
+      "experience": "3 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 60,
+      "address": {
+        "line1": "27th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    },
+    {
+      "id": "doc15",
+      "name": "Dr. Amelia Hill",
+      "image": "https://i.ibb.co/bRmYjPrT/doc15.png",
+      "email": "amelia@gmail.com",
+      "password": "kit159753",
+      "speciality": "Dermatologist",
+      "degree": "MBBS",
+      "experience": "1 Years",
+      "about": "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
+      "fees": 30,
+      "address": {
+        "line1": "37th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "availability": true
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1754503299762",
+      "doctorId": "doc1",
+      "doctorName": "Dr. Richard James",
+      "speciality": "General physician",
+      "image": "https://i.ibb.co/C3v5Dp0b/doc1.png",
+      "address": {
+        "line1": "17th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "patientName": "sathya",
+      "patientEmail": "sathyabc@gmail.com",
+      "patientAge": "23",
+      "patientPhone": "+91 1368789450",
+      "patientGender": "female",
+      "patientAddress": "124 Main St, City, Country",
+      "patientBloodGroup": "0+",
+      "patientImage": "blob:http://localhost:5173/22bf0146-2a95-4881-a96e-a60f13c298fe",
+      "datetime": "15/08/2025 at 9:30 am",
+      "status": "Paid",
+      "paymentMethod": "Paytm",
+      "appstatus": "Completed",
+      "prescription": [
+        {
+          "medicine": "medicine ",
+          "dosage": "dosage",
+          "duration": "duration",
+          "Interval": "before dinner"
+        }
+      ],
+      "diagnoses": "fewer, cough",
+      "allergies": "na"
+    },
+    {
+      "id": "1754881170105",
+      "doctorId": "doc1",
+      "doctorName": "Dr. Richard James",
+      "speciality": "General physician",
+      "image": "https://i.ibb.co/C3v5Dp0b/doc1.png",
+      "address": {
+        "line1": "17th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "patientName": "sathya",
+      "patientEmail": "sathyabc@gmail.com",
+      "patientAge": "23",
+      "patientPhone": "+91 1368789450",
+      "patientGender": "female",
+      "patientAddress": "124 Main St, City, Country",
+      "patientBloodGroup": "0+",
+      "patientImage": "blob:http://localhost:5173/02deea71-c2b9-4ed3-bd27-f4d4b8d08f47",
+      "datetime": "14/08/2025 at 11:00 am",
+      "status": "Paid",
+      "paymentMethod": "PhonePe",
+      "appstatus": "Confirmed"
+    },
+    {
+      "id": "1754992086016",
+      "doctorId": "doc1",
+      "doctorName": "Dr. Richard James",
+      "speciality": "General physician",
+      "image": "https://i.ibb.co/C3v5Dp0b/doc1.png",
+      "address": {
+        "line1": "17th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "patientName": "sathya",
+      "patientEmail": "sathyabc@gmail.com",
+      "patientAge": "23",
+      "patientGender": "Female",
+      "patientBloodGroup": "O+",
+      "patientAddress": "124 Main St, City, Country",
+      "patientPhone": "+91 1368789450",
+      "patientImage": "blob:http://localhost:5173/02deea71-c2b9-4ed3-bd27-f4d4b8d08f47",
+      "datetime": "16/08/2025 at 05:00 pm",
+      "status": "Unpaid",
+      "paymentMethod": "",
+      "appstatus": "pending",
+      "diagnosis": "cold, cough",
+      "allergies": "na",
+      "prescription": [
+        {
+          "medicine": "jvukvmkkfk",
+          "dosage": "c,jvhj,",
+          "duration": "jcjkhbvjnm",
+          "interval": "bvj b,"
+        }
+      ],
+      "diagnoses": "cough"
+    },
+    {
+      "id": "1754995098858",
+      "doctorId": "doc1",
+      "doctorName": "Dr. Richard James",
+      "speciality": "General physician",
+      "image": "https://i.ibb.co/C3v5Dp0b/doc1.png",
+      "address": {
+        "line1": "17th Cross, Richmond",
+        "line2": "Circle, Ring Road, London"
+      },
+      "patientName": "sathya",
+      "patientEmail": "sathyabc@gmail.com",
+      "patientAge": "23",
+      "patientGender": "Female",
+      "patientBloodGroup": "O+",
+      "patientAddress": "124 Main St, City, Country",
+      "patientPhone": "+91 1368789450",
+      "patientImage": "blob:http://localhost:5173/02deea71-c2b9-4ed3-bd27-f4d4b8d08f47",
+      "datetime": "12/08/2025 at 08:30 pm",
+      "status": "Unpaid",
+      "paymentMethod": "",
+      "appstatus": "Completed",
+      "prescription": [
+        {
+          "medicine": "csefae",
+          "dosage": "efa",
+          "duration": "casesvad",
+          "Interval": "scase"
+        }
+      ],
+      "diagnosis": "fewer, cold",
+      "allergies": "na",
+      "diagnoses": "lkdnvoaenf;"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "089a",
+      "appointmentId": "1754503299762",
+      "doctorName": "Dr. Richard James",
+      "patientName": "sathya",
+      "rating": 5,
+      "reviewText": "Good morning! very good experience.",
+      "createdAt": "2025-08-13T16:38:13.510Z"
+    }
+  ]
+}
