@@ -81,30 +81,48 @@ The platform also provides **medical history download**, **prescription access**
 - Role-based access (Admin / Doctor / Patient)
 - JWT-based authentication
 
+### 📱 Fully responsive for **small**, **medium**, and **large** screens
+
 ---
 
 ## 📂 Folder Structure
 medi-flow/
 │
 ├── frontend/ # React frontend
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── context/
-│ │ └── App.js
-│ └── package.json
+
+   ├── src/
+   
+      ├── components/
+   
+      ├── pages/
+   
+      ├── context/
+      
+      └── App.js
+      
+   └── package.json
+
 │
+
 ├── admin/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── context/
-│ │ └── App.js
-│ └── package.json
-│
+
+   ├── src/
+   
+      ├── components/
+   
+      ├── pages/
+   
+      ├── context/
+      
+      └── App.js
+      
+   └── package.json
+
+
 ├── backend/ 
-│ └── server.js
-│
+
+  └── server.js
+
 └── README.md
 
 
