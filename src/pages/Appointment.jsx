@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 const Appointment = () => {
 
   const { docId } = useParams()
-  const { doctors, currencySymbol, bookAppointment} = useContext(AppContext)
+  const { doctors, reviews, currencySymbol, bookAppointment} = useContext(AppContext)
   const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
 
 
@@ -19,9 +19,23 @@ const Appointment = () => {
   const [slotTime, setSlotTime] = useState('')
 
   const fetchDocInfo = async () => {
-    const docInfo = doctors.find(doc => doc.id === docId)
-    setDocInfo(docInfo)
-  }
+  const doc = doctors.find(doc => doc.id === docId);
+  if (!doc) return;
+
+  const docReviews = reviews.filter((r) => r.doctorId === doc.id);
+  const avgRating =
+    docReviews.length > 0
+      ? docReviews.reduce((sum, r) => sum + r.rating, 0) / docReviews.length
+      : 0;
+
+  const enrichedDoc = {
+    ...doc,
+    rating: avgRating,
+    reviewsCount: docReviews.length,
+  };
+
+  setDocInfo(enrichedDoc);
+};
 
   const getAvailableSlots = async () => {
     setDocSlots([])
@@ -108,7 +122,31 @@ const Appointment = () => {
               </button>
             </div>
             {/* -----------Doctor About-------- */}
-
+            
+            {docInfo.availability ? (
+                <div className="flex items-center gap-2 text-sm text-green-500">
+                  <p className="w-2 h-2 bg-green-500 rounded-full"></p>
+                  <p>Available</p>
+                </div>
+              ) : (
+                <div className="flex items-center gap-2 text-sm text-red-500">
+                  <p className="w-2 h-2 bg-red-500 rounded-full"></p>
+                  <p>Not Available</p>
+                </div>
+              )}
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <span
+                    key={i}
+                    className={i < Math.round(docInfo.rating || 0) ? "text-yellow-400" : "text-gray-300"}
+                  >
+                    ★
+                  </span>
+                ))}
+                <p className="text-sm text-gray-600 ml-2">
+                  ({docInfo.reviewsCount || 0} reviews)
+                </p>
+              </div>
             <div>
               <p className="flex items-center gap-1 text-sm font-medium text-gray-900  mt-3">
                 About <img src={assets.info_icon} alt="" />

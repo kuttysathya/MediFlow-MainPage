@@ -12,6 +12,7 @@ const AppContextProvider = (props) => {
   const [userData, setUserData] = useState(false);
   const userId = token;
   const [appointments, setAppointments] = useState([]);
+  const [reviews, setReviews] = useState([]);
 
   const navigate = useNavigate();
 
@@ -54,6 +55,45 @@ const AppContextProvider = (props) => {
       toast.error("Failed to fetch appointments");
     }
   };
+
+  const enrichDoctorsWithReviews = (doctorsList, reviewsList) => {
+  return doctorsList.map(doc => {
+    const docReviews = reviewsList.filter(r => r.doctorId === doc.id);
+    const avgRating = docReviews.length
+      ? docReviews.reduce((sum, r) => sum + r.rating, 0) / docReviews.length
+      : 0;
+    return {
+      ...doc,
+      rating: avgRating,
+      reviewsCount: docReviews.length,
+    };
+  });
+};
+
+  const fetchReviews = async () => {
+  try {
+    const { data } = await axios.get(`${API_URL}/reviews`);
+    setReviews(data);
+    setDoctors(prev => enrichDoctorsWithReviews(prev, data));
+  } catch (error) {
+    console.error(error);
+    toast.error("Failed to fetch reviews");
+  }
+};
+
+const addReview = async (review) => {
+  try {
+    const reviewWithId = {
+      ...review,
+      id: Date.now().toString(), 
+    };
+    await axios.post(`${API_URL}/reviews`, reviewWithId);
+    fetchReviews();
+  } catch (err) {
+    console.error(err);
+    toast.error("Error submitting review");
+  }
+};
 
   const bookAppointment = async ({ docId, slotDate, slotTime }) => {
   try {
@@ -139,12 +179,16 @@ const cancelAppointment = async (id) => {
     fetchAppointments,
     bookAppointment,
     appointments,
-    cancelAppointment
+    cancelAppointment,
+    reviews,     
+    fetchReviews,
+    addReview
   };
 
   useEffect(() => {
     fetchDoctors();
     fetchAppointments();
+    fetchReviews(); 
   }, []);
 
   useEffect(() => {
